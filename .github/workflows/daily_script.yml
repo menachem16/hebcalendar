@@ -3,7 +3,7 @@ name: Run Daily Script
 on:
   schedule:
     # הפעל את הסקריפט כל יום בשעה 9:00
-    - cron: '0 10 * * *'
+    - cron: '0 */2 * * *'
 
 jobs:
   run-daily-script:
