@@ -58,6 +58,7 @@ if response.status_code == 200:
         # שמירת התוצאה לקובץ JSON
         with open("calendar_data.json", "w", encoding="utf-8") as json_file:
             json.dump(extracted_json, json_file, ensure_ascii=False, indent=4)
+
         print("המידע נשמר בהצלחה בקובץ calendar_data.json!")
     else:
         print("לא נמצא מידע מתאים ל-JSON.parse.")
